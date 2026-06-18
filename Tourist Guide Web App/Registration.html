@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+ <header>
+  <div class="header-container">
+    <h1 class="site-title">Incredible India - Tourist Guide</h1>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Destination</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="content.html"><i class="fas fa-envelope"></i> Contact</a>
+       <div class="dropdown">
+        <a href="#" class="dropdown-toggle">
+          <i class="fas fa-user-circle"></i> Profile
+        </a>
+        <div class="dropdown-menu">
+          <a href="Registration.html">Login</a>
+          <a href="login.html">Registration</a>
+        </div>
+      </div>
+    <a href="quiz.html"><i class="fas fa-search"></i></a>
+    </nav>
+</header>
+
+  <section class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="breadcrumbs">
+      <a href="index.html">Home</a>  
+      <a href="login.html">Login</a>
+    </p>
+    <h2>Login Us</h2>
+    </div>
+</section>
+<br>
+
+<section class="login_box_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 left-box">
+        <div class="login_box_img">
+          <img class="img-fluid" src="image/login.jpg" alt="Login Image" />
+          <div class="hover">
+            <h4>New to our website?</h4>
+            <p>There are advances being made in science and technology every day. Be part of our community now!</p>
+            <a class="primary-btn" href="registration.html">Create an Account</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 right-box">
+        <div class="login_form_inner">
+          <h3>Log in to enter</h3>
+
+          <form class="login_form" method="post">
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" required />
+            </div>
+            <div class="form-group checkbox">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Keep me logged in</label>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="primary-btn">Log In</button>
+              <a class="forgot-link" href="#">Forgot Password?</a>
+            </div>
+          </form>
+
+          <p class="register-text">Don't have an account? <a href="login.html">Register Now</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Incredible India</h3>
+      <p>Discover the beauty and diversity of India with us. Your gateway to unforgettable journeys.</p>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-info">
+      <h3>Information</h3>
+      <ul class="info-list">
+        <li>Online Enquiry</li>
+        <li>General Enquiries</li>
+        <li>Booking Conditions</li>
+        <li>Privacy and Policy</li>
+        <li>Refund Policy</li>
+        <li>Call Us</li>
+      </ul>
+    </div>
+    <div class="footer-question">
+      <h3>Have a Question?</h3>
+      <ul class="contact-info">
+        <li><span class="icon fa fa-map-marker"></span><span class="text">Trikonbag,Rajkot</span></li>
+        <li><span class="icon fa fa-phone"></span><span class="text">+91 12345 67890</span></li>
+        <li><span class="icon fa fa-paper-plane"></span><span class="text">contact@incredibleindia.com</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Incredible India. All rights reserved by JAVIYA VIDHI</p>
+  </div>
+</footer>
+</body>
+</html>
+<style>
+
+/* Container and Grid */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-6 {
+  width: 100%;
+  max-width: 50%;
+}
+
+.login_box_img {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.login_box_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.login_box_img .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.login_box_img .hover h4 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.login_box_img .hover p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.login_box_img .hover .primary-btn {
+  background: #034d3e;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login_box_img .hover .primary-btn:hover {
+  background: #111827;
+}
+.login_form_inner {
+  background: white;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login_form_inner h3 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+}
+
+.login_form .form-group {
+  margin-bottom: 20px;
+}
+
+.login_form input[type="email"],
+.login_form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.primary-btn {
+  background-color: #034d3e;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #111827;
+}
+
+.forgot-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #034d3e;
+  text-decoration: none;
+}
+
+.register-text {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-text a {
+  color: #034d3e;
+  text-decoration: none;
+}
+
+</style>
+
+

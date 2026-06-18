@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Which Indian Destination Suits Your Personality?</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+ 
+    h1 {
+      text-align: center;
+    }
+
+    .quiz-container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question h3 {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    button {
+      display: block;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 20px auto;
+      background-color: #034d3e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #result {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+ <header>
+  <div class="header-container">
+    <h1 class="site-title">Incredible India - Tourist Guide</h1>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Destination</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="content.html"><i class="fas fa-envelope"></i> Contact</a>
+       <div class="dropdown">
+        <a href="#" class="dropdown-toggle">
+          <i class="fas fa-user-circle"></i> Profile
+        </a>
+        <div class="dropdown-menu">
+          <a href="Registration.html">Login</a>
+          <a href="login.html">Registration</a>
+        </div>
+      </div>
+    <a href="quiz.html"><i class="fas fa-search"></i></a>
+
+    </nav>
+</header>
+  <br>
+  <br>
+  <h1>Which Indian Destination Suits Your Personality?</h1>
+
+  <div class="quiz-container">
+    <form id="quiz-form">
+
+      <div class="question">
+        <h3>1. What do you prefer on a holiday?</h3>
+        <label><input type="radio" name="q1" value="goa"> Beaches and parties</label>
+        <label><input type="radio" name="q1" value="ladakh"> Mountains and adventure</label>
+        <label><input type="radio" name="q1" value="varanasi"> Spiritual experience</label>
+        <label><input type="radio" name="q1" value="jaipur"> History and architecture</label>
+      </div>
+
+      <div class="question">
+        <h3>2. Pick a weekend activity:</h3>
+        <label><input type="radio" name="q2" value="ladakh"> Biking or trekking</label>
+        <label><input type="radio" name="q2" value="goa"> Dancing or clubbing</label>
+        <label><input type="radio" name="q2" value="varanasi"> Meditation or reading</label>
+        <label><input type="radio" name="q2" value="jaipur"> Visiting museums</label>
+      </div>
+
+      <div class="question">
+        <h3>3. What is your ideal weather?</h3>
+        <label><input type="radio" name="q3" value="goa"> Warm and sunny</label>
+        <label><input type="radio" name="q3" value="ladakh"> Cold and crisp</label>
+        <label><input type="radio" name="q3" value="varanasi"> Mild and serene</label>
+        <label><input type="radio" name="q3" value="jaipur"> Hot and dry</label>
+      </div>
+
+      <button type="submit">Find My Destination</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById('quiz-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      const answers = {
+        goa: 0,
+        ladakh: 0,
+        varanasi: 0,
+        jaipur: 0
+      };
+
+      const form = event.target;
+      const q1 = form.q1.value;
+      const q2 = form.q2.value;
+      const q3 = form.q3.value;
+
+      if (!q1 || !q2 || !q3) {
+        document.getElementById('result').textContent = "Please answer all questions.";
+        return;
+      }
+
+      answers[q1]++;
+      answers[q2]++;
+      answers[q3]++;
+
+  
+      let max = 0;
+      let resultDestination = "";
+
+      for (let destination in answers) {
+        if (answers[destination] > max) {
+          max = answers[destination];
+          resultDestination = destination;
+        }
+      }
+
+      const descriptions = {
+        goa: " Goa – You’re a fun-loving beach person who enjoys parties and sunshine!",
+        ladakh: " Ladakh – You're an adventurous soul who loves mountains and offbeat paths.",
+        varanasi: "Varanasi – You're spiritual and reflective, drawn to deep cultural roots.",
+        jaipur: "Jaipur – You appreciate history, architecture, and royal charm."
+      };
+
+      document.getElementById('result').textContent = descriptions[resultDestination];
+    });
+  </script>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Incredible India</h3>
+      <p>Discover the beauty and diversity of India with us. Your gateway to unforgettable journeys.</p>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-info">
+      <h3>Information</h3>
+      <ul class="info-list">
+        <li>Online Enquiry</li>
+        <li>General Enquiries</li>
+        <li>Booking Conditions</li>
+        <li>Privacy and Policy</li>
+        <li>Refund Policy</li>
+        <li>Call Us</li>
+      </ul>
+    </div>
+    <div class="footer-question">
+      <h3>Have a Question?</h3>
+      <ul class="contact-info">
+        <li><span class="icon fa fa-map-marker"></span><span class="text">Trikonbag,Rajkot</span></li>
+        <li><span class="icon fa fa-phone"></span><span class="text">+91 12345 67890</span></li>
+        <li><span class="icon fa fa-paper-plane"></span><span class="text">contact@incredibleindia.com</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Incredible India. All rights reserved by JAVIYA VIDHI</p>
+  </div>
+</footer>
+</body>
+</html>

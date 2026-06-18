@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Incredible India - Tourist Guide</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+ <header>
+  <div class="header-container">
+    <h1 class="site-title">Incredible India - Tourist Guide</h1>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Destination</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="content.html"><i class="fas fa-envelope"></i> Contact</a>
+       <div class="dropdown">
+        <a href="#" class="dropdown-toggle">
+          <i class="fas fa-user-circle"></i> Profile
+        </a>
+        <div class="dropdown-menu">
+          <a href="Registration.html">Login</a>
+          <a href="login.html">Registration</a>
+        </div>
+      </div>
+    <a href="quiz.html"><i class="fas fa-search"></i></a>
+
+    </nav>
+</header>
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="breadcrumbs">
+      <a href="index.html">Home</a>  
+      <a href="east.html">West</a>
+    </p>
+    <h2>West Destination</h2>
+    </div>
+</section>
+<br>
+<section class="gallery-section">
+  <h2 class="gallery-title">Explore West India</h2>
+  <div class="image-gallery">
+    <div class="gallery-item">
+      <img src="image/Ahmedabad.png" alt="Ahmedabad" onclick="openModal(this)">
+      <div class="caption">Ahmedabad</div>
+    </div>
+    <div class="gallery-item">
+      <img src="image/Udaipur.png" alt="Udaipur" onclick="openModal(this)">
+      <div class="caption">Udaipur</div>
+    </div>
+  <div class="gallery-item">
+      <img src="image/Lonavala.png" alt="Lonavala" onclick="openModal(this)">
+      <div class="caption">Lonavala</div>
+    </div>
+     <div class="gallery-item">
+      <img src="image/Shirdi.png" alt="Shirdi" onclick="openModal(this)">
+      <div class="caption">Shirdi</div>
+    </div>
+     <div class="gallery-item">
+      <img src="image/Ajanta.png" alt="Ajanta and Ellora Caves" onclick="openModal(this)">
+      <div class="caption">Ajanta and Ellora Caves</div>
+    </div>
+     <div class="gallery-item">
+      <img src="image/Jaipur.png" alt="Jaipur" onclick="openModal(this)">
+      <div class="caption">Jaipur</div>
+    </div>
+  </div>
+</section>
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="modalCaption"></div>
+</div>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Incredible India</h3>
+      <p>Discover the beauty and diversity of India with us. Your gateway to unforgettable journeys.</p>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-info">
+      <h3>Information</h3>
+      <ul class="info-list">
+        <li>Online Enquiry</li>
+        <li>General Enquiries</li>
+        <li>Booking Conditions</li>
+        <li>Privacy and Policy</li>
+        <li>Refund Policy</li>
+        <li>Call Us</li>
+      </ul>
+    </div>
+    <div class="footer-question">
+      <h3>Have a Question?</h3>
+      <ul class="contact-info">
+        <li><span class="icon fa fa-map-marker"></span><span class="text">Trikonbag,Rajkot</span></li>
+        <li><span class="icon fa fa-phone"></span><span class="text">+91 12345 67890</span></li>
+        <li><span class="icon fa fa-paper-plane"></span><span class="text">contact@incredibleindia.com</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Incredible India. All rights reserved by JAVIYA VIDHI</p>
+  </div>
+</footer>
+<style>
+  .gallery-section {
+  padding: 40px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  animation: zoom 0.4s;
+}
+
+@keyframes zoom {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+
+#modalCaption {
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 1.2em;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+
+<script>
+  function openModal(imgElement) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    var captionText = document.getElementById("modalCaption");
+
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    captionText.innerHTML = imgElement.alt;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

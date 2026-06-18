@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Incredible India - Tourist Guide</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+   <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet">
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</head>
+<body>
+  <style>
+.btn-book {
+    background-color: #111827;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-book:hover {
+    background-color: #1f2937;
+}
+.btn-view {
+    border: 2px solid #111827;
+    color: #111827;
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.btn-view:hover {
+    background-color: #111827;
+    color: #fff;
+}
+
+  </style>
+<!-- <style>
+body {
+  background-color: #111827;
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header,
+footer {
+  background-color: #111827; 
+  color: white;
+}
+
+.gallery-item{
+  background-color: #111827;
+  color: white;
+}
+.newsletter-section,
+.footer-container {
+  background-color: #034d3e;
+}
+
+.book-button,
+.details-link {
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover,
+.details-link:hover {
+  background-color: 666; 
+}
+
+
+/* 2. Dark Theme Activated */
+body.dark-mode {
+  background-color: #034d3e;
+  color: #fff;
+}
+
+body.dark-mode * {
+  color: #fff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #034d3e;
+  color: #ffffff;
+}
+
+body.dark-mode .gallery-item,
+body.dark-mode .newsletter-section,
+body.dark-mode .footer-container {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+body.dark-mode .book-button,
+body.dark-mode .details-link {
+  background-color: #111827;
+  color: #fff;
+}
+
+body.dark-mode .book-button:hover {
+  background-color: #666;
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+#theme-toggle:hover {
+  color: white;
+}
+body:not(.dark-mode) #theme-toggle i::before {
+  content: "\f186"; 
+}
+body.dark-mode #theme-toggle i::before {
+  content: "\f185"; 
+}
+
+</style> -->
+  <!-- Header Section -->
+  <header>
+  <div class="header-container">
+    <a class="navbar-brand fw-bold d-flex align-items-center text-white" href="destination.html">
+  <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+       alt="Logo" width="35" height="35"
+       class="d-inline-block align-text-top me-2">
+  Incredible India - Tourist Guide
+</a>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Destination</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="content.html"><i class="fas fa-envelope"></i> Contact</a>
+       <div class="dropdown">
+        <a href="#" class="dropdown-toggle">
+          <i class="fas fa-user-circle"></i> Profile
+        </a>
+        <div class="dropdown-menu">
+          <a href="Registration.html">Login</a>
+          <a href="login.html">Registration</a>
+        </div>
+      </div>
+   <!-- <a href="quiz.html"><i class="fas fa-search"></i></a>
+<button id="theme-toggle" aria-label="Toggle Dark Mode">
+  <i class="fas fa-moon"></i>
+</button> -->
+    </nav>
+</header>
+
+<section class="hero-slider-section">
+  <div class="slider-wrapper">
+    <div class="slide active" style="background-image: url('image/bg_1.jpg');"></div>
+    <div class="slide" style="background-image: url('image/bg_6.jpg');"></div>
+    <div class="slide" style="background-image: url('image/kerla.png');"></div>
+  </div>
+  <div class="slider-overlay"></div>
+  <div class="slider-content">
+    <h1>Welcome to Incredible India - Tourist Guide</h1>
+    <a href="https://youtu.be/tdgWEEOgdrU?si=GFmGPzpstxQJ1tGq"
+       class="play-button"
+       target="_blank"
+       aria-label="Play Video">
+      <i class="fas fa-play"></i>
+    </a>
+  </div>
+</section>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold text-primary">Popular Destinations</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/agra.png" class="card-img-top" alt="Taj Mahal">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Taj Mahal, Agra</h5>
+            <p class="card-text">Experience the timeless beauty of the Taj Mahal on a guided tour of Agra.</p>
+            <p class="text-success fw-semibold">₹5,500/person</p>
+           <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/jaipur.png" class="card-img-top" alt="Jaipur">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Jaipur, Rajasthan</h5>
+            <p class="card-text">The Pink City, famous for palaces and forts.</p>
+            <p class="text-success fw-semibold">₹5,599/person</p>
+           <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/goa.png" class="card-img-top" alt="Goa">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Goa</h5>
+            <p class="card-text">Beautiful beaches and vibrant nightlife.</p>
+            <p class="text-success fw-semibold">₹6,000/person</p>
+           <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/rishikesh.png" class="card-img-top" alt="Rishikesh">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Rishikesh, Uttarakhand</h5>
+            <p class="card-text">Yoga capital and gateway to the Himalayas.</p>
+            <p class="text-success fw-semibold">₹6,500/person</p>
+          <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/ladakh.png" class="card-img-top" alt="Ladakh">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Ladakh</h5>
+            <p class="card-text">Stunning Himalayan landscapes and adventure sports.</p>
+            <p class="text-success fw-semibold">₹5,000/person</p>
+           <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/delhi.png" class="card-img-top" alt="Delhi">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Delhi</h5>
+            <p class="card-text">The capital city with historical monuments and modern attractions.</p>
+            <p class="text-success fw-semibold">₹4,999/person</p>
+           <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/varansi.png" class="card-img-top" alt="Varanasi">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Varanasi, Uttar Pradesh</h5>
+            <p class="card-text">Spiritual city on the banks of the Ganges.</p>
+            <p class="text-success fw-semibold">₹7,550/person</p>
+          <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="image/kerla.png" class="card-img-top" alt="Kerala">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Kerala</h5>
+            <p class="card-text">Serene backwaters and hill stations.</p>
+            <p class="text-success fw-semibold">₹5,499/person</p>
+           <a href="#" class="btn-view btn-sm">View Details</a>
+            <a href="booking.html" class="btn-book btn-sm ms-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<section class="local-tips-section my-5">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Local Tips for Travelers</h2>
+    <div class="accordion" id="tipsAccordion">
+     
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="tipOneHeader">
+          <button 
+            class="accordion-button" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#tipOne" 
+            aria-expanded="true" 
+            aria-controls="tipOne">
+            Best Time to Visit
+          </button>
+        </h2>
+        <div 
+          id="tipOne" 
+          class="accordion-collapse collapse show" 
+          aria-labelledby="tipOneHeader" 
+          data-bs-parent="#tipsAccordion">
+          <div class="accordion-body">
+            October to March is the best time to visit India.
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="tipTwoHeader">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#tipTwo" 
+            aria-expanded="false" 
+            aria-controls="tipTwo">
+            Local Etiquette
+          </button>
+        </h2>
+        <div 
+          id="tipTwo" 
+          class="accordion-collapse collapse" 
+          aria-labelledby="tipTwoHeader" 
+          data-bs-parent="#tipsAccordion">
+          <div class="accordion-body">
+            Remove shoes when entering temples or homes.
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="tipThreeHeader">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#tipThree" 
+            aria-expanded="false" 
+            aria-controls="tipThree">
+            Transportation Tips
+          </button>
+        </h2>
+        <div 
+          id="tipThree" 
+          class="accordion-collapse collapse" 
+          aria-labelledby="tipThreeHeader" 
+          data-bs-parent="#tipsAccordion">
+          <div class="accordion-body">
+           Use metro or app-based taxis (Ola/Uber) in cities.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="my-5">
+  <div class="container">
+    <h2 class="mb-4">Explore Indian Culture</h2>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#culture">Culture</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#food">Food</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#festivals">Festivals</a>
+      </li>
+    </ul>
+    <div class="tab-content bg-dark text-white p-4">
+
+      <div class="tab-pane fade show active" id="culture">
+        India has diverse traditions, languages, and arts.
+      </div>
+
+      <div class="tab-pane fade" id="food">
+        Explore Indian cuisine.
+        <a href="food.html" class="btn btn-primary btn-sm mt-2">View Food</a>
+      </div>
+
+      <div class="tab-pane fade" id="festivals">
+        India celebrates Diwali, Holi, utttrayan,janmastami.
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Get the latest travel tips, destination guides, and exclusive offers straight to your inbox!</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Incredible India</h3>
+      <p>Discover the beauty and diversity of India with us. Your gateway to unforgettable journeys.</p>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-info">
+      <h3>Information</h3>
+      <ul class="info-list">
+        <li>Online Enquiry</li>
+        <li>General Enquiries</li>
+        <li>Booking Conditions</li>
+        <li>Privacy and Policy</li>
+        <li>Refund Policy</li>
+        <li>Call Us</li>
+      </ul>
+    </div>
+    <div class="footer-question">
+      <h3>Have a Question?</h3>
+      <ul class="contact-info">
+        <li><span class="icon fa fa-map-marker"></span><span class="text">Trikonbag,Rajkot</span></li>
+        <li><span class="icon fa fa-phone"></span><span class="text">+91 12345 67890</span></li>
+        <li><span class="icon fa fa-paper-plane"></span><span class="text">tourist123@gmail.com</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Incredible India. All rights reserved by JAVIYA VIDHI</p>
+  </div>
+</footer>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+  function showNextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+  setInterval(showNextSlide, 4000);
+</script>
+<!-- 
+//theme 
+  // const button = document.getElementById("theme-toggle");
+  // if (localStorage.getItem("theme") === "dark") 
+  // {
+  //   document.body.classList.add("dark-mode");
+  // }
+  // button.onclick = function () 
+  // {
+  //   document.body.classList.toggle("dark-mode");
+  //   if (document.body.classList.contains("dark-mode")) {
+  //     localStorage.setItem("theme", "dark");
+  //   } else {
+  //     localStorage.setItem("theme", "light");
+  //   }
+  // }; -->
+  
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

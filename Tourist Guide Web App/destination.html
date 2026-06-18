@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Incredible India - Tourist Guide</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+<style>
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 300px;
+  transition: all 0.3s ease;
+}
+</style>
+</head>
+<body>
+   <header>
+  <div class="header-container">
+    <h1 class="site-title">Incredible India - Tourist Guide</h1>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Destination</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="content.html"><i class="fas fa-envelope"></i> Contact</a>
+       <div class="dropdown">
+        <a href="#" class="dropdown-toggle">
+          <i class="fas fa-user-circle"></i> Profile
+        </a>
+        <div class="dropdown-menu">
+          <a href="Registration.html">Login</a>
+          <a href="login.html">Registration</a>
+        </div>
+      </div>
+    <a href="quiz.html"><i class="fas fa-search"></i></a>
+
+    </nav>
+</header>
+  <section class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="breadcrumbs">
+      <a href="index.html">Home</a>  
+      <a href="destination.html">Destination</a>
+    </p>
+    <h2>Destination Us</h2>
+    </div>
+</section>
+<br>
+
+<input
+  type="text"
+  id="searchBox"
+  placeholder="Search destinations..."
+  style="width: 100%; padding: 12px; font-size: 16px; margin-bottom: 20px; border-radius: 5px;"/>
+<p id="noResults" style="display: none; color: red; font-size: 18px;">No destinations found.</p>
+
+<section class="gallery-section">
+  <h2 class="section-title">Explore Destinations</h2>
+  <div class="gallery">
+        <div class="gallery-item">
+  <img src="image/east.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>East India</h3>
+    <p class="description">Explore the vibrant culture and scenic beauty of East India</p>
+    <a href="east.html" class="book-button">Explore East</a>
+  </div>
+</div>
+<div class="gallery">
+        <div class="gallery-item">
+  <img src="image/west.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>West India</h3>
+    <p class="description">Discover the rich heritage and diverse landscapes of West India.</p>
+    <a href="west.html" class="book-button">Explore West</a>
+  </div>
+</div>
+<div class="gallery">
+        <div class="gallery-item">
+  <img src="image/south.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>South India</h3>
+    <p class="description">Experience the serene temples, lush backwaters, and rich traditions of South India</p>
+    <a href="south.html" class="book-button">Explore South</a>
+  </div>
+</div>
+</section>
+
+<section class="gallery-section">
+  <h2 class="section-title">Popular Destinations</h2>
+  <div class="gallery">
+        <div class="gallery-item">
+  <img src="image/agra.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Taj Mahal, Agra</h3>
+    <p class="description">Experience the timeless beauty of the Taj Mahal on a guided tour of Agra.</p>
+    <p class="price">Package Price: ₹5,500/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div>
+<div class="gallery-item">
+  <img src="image/jaipur.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Jaipur, Rajasthan</h3>
+    <p class="description">The Pink City, famous for palaces and forts.</p>
+    <p class="price">Package Price: ₹5,599/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div>
+<div class="gallery-item">
+  <img src="image/goa.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Goa </h3>
+    <p class="description">Beautiful beaches and vibrant nightlife</p>
+    <p class="price">Package Price: ₹6,000/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div>
+<div class="gallery-item">
+  <img src="image/rishikesh.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Rishikesh, Uttarakhand </h3>
+    <p class="description">Yoga capital and gateway to the Himalayas.</p>
+    <p class="price">Package Price: ₹6,500/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div><div class="gallery-item">
+  <img src="image/ladakh.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Ladakh</h3>
+    <p class="description">Stunning Himalayan landscapes and adventure sports.</p>
+    <p class="price">Package Price: ₹5,000/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div><div class="gallery-item">
+  <img src="image/delhi.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Delhi</h3>
+    <p class="description">The capital city with historical monuments and modern attractions.</p>
+    <p class="price">Package Price: ₹4,999/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div><div class="gallery-item">
+  <img src="image/varansi.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Varanasi, Uttar Pradesh</h3>
+    <p class="description">Spiritual city on the banks of the Ganges.</p>
+    <p class="price">Package Price: ₹7,550/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div>
+<div class="gallery-item">
+  <img src="image/kerla.png" alt="Taj Mahal" />
+  <div class="gallery-content">
+    <h3>Kerala</h3>
+    <p class="description">Serene backwaters and hill stations.</p>
+    <p class="price">Package Price: ₹5,499/person</p>
+    <a href="#" class="details-link">View Details</a>
+    <a href="booking.html" class="book-button">Book Now</a>
+  </div>
+</div>
+  </div>
+</section>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Incredible India</h3>
+      <p>Discover the beauty and diversity of India with us. Your gateway to unforgettable journeys.</p>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-info">
+      <h3>Information</h3>
+      <ul class="info-list">
+        <li>Online Enquiry</li>
+        <li>General Enquiries</li>
+        <li>Booking Conditions</li>
+        <li>Privacy and Policy</li>
+        <li>Refund Policy</li>
+        <li>Call Us</li>
+      </ul>
+    </div>
+    <div class="footer-question">
+      <h3>Have a Question?</h3>
+      <ul class="contact-info">
+        <li><span class="icon fa fa-map-marker"></span><span class="text">Trikonbag,Rajkot</span></li>
+        <li><span class="icon fa fa-phone"></span><span class="text">+91 12345 67890</span></li>
+        <li><span class="icon fa fa-paper-plane"></span><span class="text">contact@incredibleindia.com</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Incredible India. All rights reserved by JAVIYA VIDHI</p>
+  </div>
+</footer>
+<script>
+let searchBox = document.getElementById("searchBox");
+let items = document.querySelectorAll(".gallery-item");
+let noMsg = document.getElementById("noResults");
+
+searchBox.oninput = () => {
+  let text = searchBox.value.toLowerCase();
+  let found = false;
+
+  items.forEach(it => {
+    if (it.innerText.toLowerCase().includes(text)) {
+      it.style.display = "block";
+      found = true;
+    } else {
+      it.style.display = "none";
+    }
+  });
+
+  noMsg.style.display = found ? "none" : "block";
+};
+</script>
+
+
+</body>
+</html>
